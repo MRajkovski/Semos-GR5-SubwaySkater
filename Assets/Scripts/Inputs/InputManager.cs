@@ -65,8 +65,7 @@ public class InputManager : MonoBehaviour
     {
         Vector2 delta = touchPosition - startDrag;
         float sqrDistance = delta.sqrMagnitude;
-        Debug.Log("TESTENDDRAG");
-        Debug.Log("SQRDISTANCE: " + sqrDistance + " AND DEADZONE: " + sqrSwipeDeadzone);
+
         // Confirmed swipe
         if (sqrDistance > sqrSwipeDeadzone)
         {
@@ -77,12 +76,10 @@ public class InputManager : MonoBehaviour
                 if(delta.x > 0)
                 {
                     swipeRight = true;
-                    Debug.Log("TESTRIGHT");
                 }
                 else
                 {
                     swipeLeft = true;
-                    Debug.Log("TESTLEFT");
                 }
             }
             else // Up or Down
@@ -90,12 +87,10 @@ public class InputManager : MonoBehaviour
                 if(delta.y > 0)
                 {
                     swipeUp = true;
-                    Debug.Log("TESTUP");
                 }
                 else
                 {
                     swipeDown = true;
-                    Debug.Log("TESTDOWN");
                 }
             }
         }
@@ -104,19 +99,16 @@ public class InputManager : MonoBehaviour
     private void OnStartDrag(InputAction.CallbackContext ctx)
     {
         startDrag = touchPosition;
-        Debug.Log("TESTSTARTDRAG");
     }
 
     private void OnPosition(InputAction.CallbackContext ctx)
     {
         touchPosition = ctx.ReadValue<Vector2>();
-        Debug.Log("TESTONPOS");
     }
 
     private void OnTap(InputAction.CallbackContext ctx)
     {
         tap = true;
-        Debug.Log("TESTTAP");
     }
 
     private void OnEnable()

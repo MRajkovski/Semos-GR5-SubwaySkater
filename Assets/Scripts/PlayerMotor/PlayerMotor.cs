@@ -38,7 +38,6 @@ public class PlayerMotor : MonoBehaviour
         if (!isPaused)
         {
             UpdateMotor();
-           // Debug.Log("STATE: "+state.GetType().ToString());
         }
     }
 
