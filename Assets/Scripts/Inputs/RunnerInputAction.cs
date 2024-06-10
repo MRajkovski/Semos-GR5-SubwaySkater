@@ -123,7 +123,7 @@ public partial class @RunnerInputAction: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""32109993-9189-4079-8b28-392c5edc75e7"",
-                    ""path"": ""<Touchscreen>/touch*/tap"",
+                    ""path"": ""<Touchscreen>/touch*/press"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mobile"",
@@ -145,7 +145,7 @@ public partial class @RunnerInputAction: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""40b8dceb-466e-40b3-8a4b-b7c4d1a4b5a0"",
-                    ""path"": ""<Touchscreen>/touch*/tap"",
+                    ""path"": ""<Touchscreen>/touch*/press"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mobile"",
